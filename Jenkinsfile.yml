@@ -6,6 +6,8 @@ node('ubuntu18.04-OnDemand'){
     checkout scm
   }
 
+  
+
   stage('Deploy GH Pages'){
     if (env.BRANCH_NAME == "master") {
       sh """
